@@ -1,0 +1,87 @@
+.submit_outside_wrapper{
+    /* background-color: #202020; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-size: calc(10px + 2vmin);
+    color: white;
+    width: 100%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    margin-right: -1rem;
+}
+.submit_inside_wrapper{
+    background-color: #3D4148;
+    padding: 2%;
+    border-radius: 7px;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+
+}
+.submit_title{
+    font-weight: bold;    
+    color:white;
+}  
+.submit_content{
+    font-size: medium;
+    color:white;
+    resize: none;
+    font-family: inherit;
+}
+.submit_username{
+    font-size: small;
+    font-weight: light;
+    color: rgb(175,175,255);
+}
+.submit_username, .submit_content, .submit_title{
+    width: 90%;
+
+    background-color: #282c34;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    padding:1% 2%;
+    margin-bottom: 2px;
+}
+.submit_content:focus, .submit_title:focus, .submit_username:focus{
+    outline: none;
+}
+.submit_button{
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    padding: 1% 2%;
+    background-color: #048099;
+    background: linear-gradient(45deg, #055291, #029985);
+}
+.submit_button:hover{
+    animation: button-click .5;
+    background: linear-gradient(45deg, #00ff95, #09009f);
+}
+.submit_button:focus {
+    animation: button-click .5;
+}
+  @keyframes button-click {
+    from {
+        rotate: 0;
+        background: linear-gradient(45deg, #09009f, #00ff95);
+    }
+    to {
+        rotate: 180deg;
+        background: linear-gradient(45deg, #00ff95, #09009f);
+    }
+  }
+  
+.submit_checkbox_label{
+    padding-right: 7%;
+    float: right;
+    font-size: medium;
+}

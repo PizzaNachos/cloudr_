@@ -1,0 +1,24 @@
+.top-bar{
+    background-color: #282c34;
+  
+    padding: 2.5%;
+  
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .logo-text{
+    display: block;
+    font-weight: bold;
+    font-size: 4rem;
+    background-color: #048099;
+    background: linear-gradient(45deg, #09009f, #00ff95 80%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .desc-text{
+    font-size: 1.5rem;
+    color: white;
+  }
+  
